@@ -5,14 +5,14 @@ using namespace std;
 #define ll long long
 #define pb push_back
 #define rep(i,st,ed) for(int i=st,edi=ed;i<=edi;i++)
-int argflag[22],usedarg;
-
-const int TXT_LEN=1e6+10;
+int argflag[22],usedarg;            // used for CMD arg
+ 
+const int TXT_LEN=1e6+10;           // the max len limit for souce code
 int rex[TXT_LEN],rey[TXT_LEN];
 
-const int MX_TK=1e6+10,MX_OP=3;
-const int DI_SZ=50,bsop=100,bsdeli=200,bshaku=300,bscg=400;
-const int bsnum=501,bsid=601;
+const int MX_TK=1e6+10,MX_OP=3;     // max number of tokens      max len of  operator 
+const int DI_SZ=50,bsop=100,bsdeli=200,bshaku=300,bscg=400;     //deliver different kinds of table   bs<-base
+const int bsnum=501,bsid=601;       
 
 //table
 string keywords[DI_SZ] = { //1-100
@@ -53,12 +53,12 @@ bool isValidChar(char c) {
 }
 
 //token
-int toptk;
+int toptk;              // the top of stack
 struct TOKEN{
-    string type;
-    ll sym;
-    string word;
-    int idx,idy;
+    string type;        // token type
+    ll sym;             // hash and token kind
+    string word;        // source code token word
+    int idx,idy;        // Source code rows and columns
 }token[MX_TK];
 
 void getTokens(const string& input,ofstream& fout) {
@@ -171,9 +171,9 @@ string low_string(const string &src) {            //  down A-Z  to a-z
 
 int main(int argc, char *argv[]) {
 
-    string filein="p2.in",fileout="p2.out";
+    string filein="lex.in",fileout="lex.out";
 
-    //complie process
+    //complie cmd process
     if(argc>20){perror("Error:  Too many parameters");exit(1);}
     rep(i,1,argc-1){
         string tmp=argv[i];
@@ -183,7 +183,7 @@ int main(int argc, char *argv[]) {
         }
         filein=tmp;
     }
-    if(usedarg+2!=argc){
+    if(usedarg+2<argc){
         cerr<<"Error:  parameter error, require [SouceFileName (-ParaName FileName)*]"<<endl;exit(1);
     }
 

@@ -45,7 +45,7 @@ string remove_comments(const string &src) {     //  notice /*/ condition
 
 int main(int argc, char *argv[]) {
 
-    string filein="p2.in",fileout="p2.out";
+    string filein="p1.in",fileout="p1.out";
 
     //complie process
     if(argc>20){perror("Error:  Too many parameters");exit(1);}

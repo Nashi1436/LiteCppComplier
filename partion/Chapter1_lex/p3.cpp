@@ -116,7 +116,7 @@ void getTokens(const string& input,ofstream& fout) {
 
 int main(int argc, char *argv[]) {
 
-    string filein="p2.in",fileout="p2.out";
+    string filein="p3.in",fileout="p3.out";
 
     //complie process
     if(argc>20){perror("Error:  Too many parameters");exit(1);}
