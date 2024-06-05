@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "ostream": "cpp",
+        "random": "cpp",
+        "iosfwd": "cpp",
+        "vector": "cpp",
+        "ios": "cpp",
+        "xstring": "cpp",
+        "string": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

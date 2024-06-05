@@ -1,0 +1,13 @@
+{
+    int m, n, gcd;
+    m = 18;
+    n = 24;
+    while (m != n) {
+        if (m > n) {
+            m = m - n;
+        } else {
+            n = n - m;
+        }
+    }
+    gcd = m;
+}

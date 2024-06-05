@@ -1,0 +1,10 @@
+{
+    int a, b, max;
+    a = 15;
+    b = 20;
+    if (a > b) {
+        max = a;
+    } else {
+        max = b;
+    }
+}

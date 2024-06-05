@@ -1,0 +1,9 @@
+{
+    int n, fact;
+    n = 5;
+    fact = 1;
+    do {
+        fact = fact * n;
+        n = n - 1;
+    } while (n > 0);
+}
