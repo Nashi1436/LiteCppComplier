@@ -1,0 +1,76 @@
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    int c;
+    a=3;b=4;c=5;
+    //scanf("%d",&c);
+    if(a<=b){a=b+1;}
+    else {b=b-a*b-c;}
+    // printf("%d",a+b);
+    for(i=0;i<8;i=i+1)
+    {
+        a=i+1;
+        //break;
+    }
+    do
+    {
+        a=a+b;
+        b=b+a;
+    }
+    while(a!=b);
+    a=b-a*b;
+    while(a==b)
+    {
+        a=a-1;b=b+1;
+    }
+    c=a+b;
+
+
+
+
+    {
+       int a, b,c;
+        a =  1 + 2 * 3;
+        b =  1 + 2 * 3;
+
+        int d=a=b=1;
+        int e=!!!!a;
+        int f=a?1:2;
+
+        if (a > b){
+            a = a - 1;
+        } else {
+            b = b + 1;
+        }
+
+        do{
+            a= a + 1;
+        }while (a < 5);
+
+        for(int a=1;a<=10;a=a+1){
+            b = b + 1;
+        }
+
+        for(a=b=1;a<=10;a=a+1){
+            b = b + 1;
+        }
+
+        for(;b<=10;) b=b+1;
+
+        
+
+        while (a < 10) {
+            a = a + 1;
+        }
+
+
+        {
+            a=a+1;
+        } 
+    }
+
+
+
+
+}

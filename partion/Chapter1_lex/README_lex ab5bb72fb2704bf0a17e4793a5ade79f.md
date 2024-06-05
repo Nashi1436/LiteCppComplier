@@ -78,7 +78,7 @@
 ```jsx
 g++ lex.cpp -o lex
 ./lex
-./lex lex.in
+./lex lex.in。/
 ./lex lex.in -o lex.out
 ./lex -o lex.out lex.in 
 ```
